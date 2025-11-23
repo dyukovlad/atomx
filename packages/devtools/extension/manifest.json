@@ -1,0 +1,7 @@
+{
+  "manifest_version": 3,
+  "name": "AtomX DevTools",
+  "version": "0.1.0",
+  "devtools_page": "devtools.html",
+  "permissions": ["scripting"]
+}
