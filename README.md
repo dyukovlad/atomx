@@ -151,7 +151,7 @@ MIT – use anywhere, keep the licence line.
 
 ## Links
 
-GitHub: https://github.com/yourname/atomx  
+GitHub: https://github.com/dyukovlad/atomx  
 Npm: https://npmjs.com/org/atomx  
 Docs: https://atomx.dev (coming soon)
 
