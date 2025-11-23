@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { createStore } from '@atomx/core';
+import { createStore } from '@atomx-fast/core';
 import { useAtom } from '@atomx/vue';
 import { ref } from 'vue';
 

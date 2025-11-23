@@ -1,4 +1,4 @@
-import { createStore } from '@atomx/core';
+import { createStore } from '@atomx-fast/core';
 import { useAtom } from '@atomx/react';
 import { useState } from 'react';
 

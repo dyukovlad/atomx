@@ -5,7 +5,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@atomx/core": "workspace:*",
+    "@atomx-fast/core": "workspace:*",
     "@atomx/react": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

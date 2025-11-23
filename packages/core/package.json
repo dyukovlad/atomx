@@ -1,13 +1,20 @@
 {
-  "name": "@atomx/core",
+  "name": "@atomx-fast/core",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
-    "test": "echo core ok"
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.53.3",
+    "tslib": "^2.8.1"
   }
 }

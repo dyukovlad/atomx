@@ -5,7 +5,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@atomx/core": "workspace:*",
+    "@atomx-fast/core": "workspace:*",
     "@atomx/vue": "workspace:*",
     "vue": "^3.3.0"
   },

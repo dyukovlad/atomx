@@ -6,13 +6,13 @@
 
 # AtomX — самый быстрый реактивный стейт, который просто работает
 
-| English                                         | Русский                                           |
-| ----------------------------------------------- | ------------------------------------------------- |
-| **Install**<br>`npm i @atomx/core @atomx/react` | **Установка**<br>`npm i @atomx/core @atomx/react` |
-| Zero-boilerplate                                | Без бойлерплейта                                  |
-| Framework-agnostic core                         | Ядро независимо от фреймворка                     |
-| ≤ 4 kB gzipped                                  | ≤ 4 КБ gzip                                       |
-| TypeScript out-of-the-box                       | TypeScript сразу работает                         |
+| English                                              | Русский                                                |
+| ---------------------------------------------------- | ------------------------------------------------------ |
+| **Install**<br>`npm i @atomx-fast/core @atomx/react` | **Установка**<br>`npm i @atomx-fast/core @atomx/react` |
+| Zero-boilerplate                                     | Без бойлерплейта                                       |
+| Framework-agnostic core                              | Ядро независимо от фреймворка                          |
+| ≤ 4 kB gzipped                                       | ≤ 4 КБ gzip                                            |
+| TypeScript out-of-the-box                            | TypeScript сразу работает                              |
 
 ---
 
@@ -20,7 +20,7 @@
 
 ```ts
 // store.ts
-import { atom } from '@atomx/core';
+import { atom } from '@atomx-fast/core';
 export const counter = atom(0);
 ```
 ````
@@ -41,7 +41,7 @@ export const Counter = () => {
 ## Normalised Data | Нормализованные данные
 
 ```ts
-import { createTable } from '@atomx/core';
+import { createTable } from '@atomx-fast/core';
 
 export const users = createTable<{ id: string; name: string }>();
 export const posts = createTable<{
@@ -59,7 +59,7 @@ posts.set('a', { id: 'a', title: 'Hi', userId: '1' });
 ## Async + Cache (SWR) | Асинхронность + кеш
 
 ```ts
-import { reactor } from '@atomx/core';
+import { reactor } from '@atomx-fast/core';
 
 const userQuery = reactor(
   () => fetch(`/api/user/${id}`).then((r) => r.json()),
@@ -75,7 +75,7 @@ const { data, loading, error } = useAtom(userQuery);
 ## Derived Values | Производные значения
 
 ```ts
-import { derived } from '@atomx/core';
+import { derived } from '@atomx-fast/core';
 
 const double = derived(() => counter.get() * 2, [counter]);
 // useAtom(double) → auto-updates
@@ -135,11 +135,11 @@ connect(store); // open Chrome DevTools → AtomX panel
 
 ## Bundle Size
 
-| Package        | Min    | Gzip   |
-| -------------- | ------ | ------ |
-| `@atomx/core`  | 9 kB   | 3.8 kB |
-| `@atomx/react` | 0.5 kB | 0.3 kB |
-| `@atomx/vue`   | 0.5 kB | 0.3 kB |
+| Package            | Min    | Gzip   |
+| ------------------ | ------ | ------ |
+| `@atomx-fast/core` | 9 kB   | 3.8 kB |
+| `@atomx/react`     | 0.5 kB | 0.3 kB |
+| `@atomx/vue`       | 0.5 kB | 0.3 kB |
 
 ---
 
